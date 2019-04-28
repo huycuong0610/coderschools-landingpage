@@ -1,23 +1,20 @@
 /* sample file */
 
+
 // Base styling for the navbar
 #mainNav {
   box-shadow: $box-shadow;
-  background-color: $white;
+  background-color: $blue-dark;
   transition: background-color 0.2s ease;
   .navbar-brand {
     font-family: $font-family-sans-serif;
     font-weight: $font-weight-bold;
-    color: $gray-900;
   }
   .navbar-nav {
     .nav-item {
       .nav-link {
-        color: $gray-600;
-        font-family: $font-family-sans-serif;
-        font-weight: $font-weight-bold;
-        font-size: 0.9rem;
         padding: 0.75rem 0;
+        color: white;
         &:hover,
         &:active {
           color: $primary;
@@ -31,18 +28,22 @@
   @include media-breakpoint-up(lg) {
     // Base styling for the navbar - screen sizes greater than the large breakpoint
     box-shadow: none;
-    background-color: transparent;
+    background-color: $blue-dark;
+    max-height: 128px;
     .navbar-brand {
-      color: fade-out($white, .3);
       &:hover {
         color: $white;
       }
     }
+    img{
+      max-width: 100px;
+      margin-right: 20px;
+    }
     .navbar-nav {
       .nav-item {
         .nav-link {
-          color: fade-out($white, .3);
           padding: 0 1rem;
+          font-size: 15px;
           &:hover {
             color: $white;
           }
@@ -84,6 +85,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 // Typography
@@ -119,4 +121,29 @@ hr.light {
 // Page section padding
 .page-section {
   padding: 8rem 0;
+}
+.main_footer__menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-language {
+    line-height: 17px;
+    font-size: 16px;
+    color: #c4c4c4;
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 5px;
+    font-weight: 400;
+}
+
+.apply-now{
+  background-color: #E63439;
+  border: 1px solid white;
+  color: white !important;
+  padding: 5px 20px;
+  color: white;
+  margin-right: 70px;
 }

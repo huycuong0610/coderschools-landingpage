@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 
 <body>
      <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+      <nav class="navbar navbar-expand-lg navbar-light  py-3" id="mainNav">
         <div class="container">
         <div class="logo">
           <a class="navbar-brand" href="/vn">
             <picture>
-                <source media="(min-width: 768px)" srcset="/assets/logo-full-cec610894e34df432eaf3899aa7c0d5ce27df6dac6a40c1eba1990e79718450a.svg">
-                <source media="(max-width: 767px)" srcset="/assets/Logo_responsive-09a480a599ff45fc79989ade00cb3ce754f3318f50094f86e9cf478f6ed375d7.png">
+                <source srcset="/assets/img/fb.png">
+                <source srcset="/assets/img/coderschool.png">
+                <img alt="logo-full" width="180px" src="/assets/">
+            </picture>
+            <picture>
+                <source srcset="/assets/img/coderschool.png">
                 <img alt="logo-full" width="180px" src="/assets/">
             </picture>
           </a>
@@ -27,7 +32,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+            <ul class="navbar-nav my-2 my-lg-0">
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#about">About Program</a>
               </li>
@@ -35,20 +40,12 @@
                 <a class="nav-link js-scroll-trigger" href="#services">Course Track</a>
               </li>
             </ul>
-    
-            <div class="apply-now">
-                Apply Now
-            </div>
-    
-            <div class="lang">
-                <div class="en">
-                    Eng
-                </div>/
-                <div class="vn">
-                    Vie
+                <a target="_self" class="ml-auto apply-now">
+                    Apply Now
+                </a>
+                <div class="lang">
+                    <a data-turbolinks="false" class="nav-link nav-language" href="/en">Eng / </a><a data-turbolinks="false" class="nav-link nav-language active" href="/vn">Vie</a>
                 </div>
-            </div>
-    
           </div>
         </div>
       </nav>    <main role="main" class="container">
@@ -212,6 +209,47 @@
                             </ul>
                       </div>
                       <div class="format">
+                          <h4>Venue & Location</h4>
+                            <ul>
+                                <li><i class="fas fa-calendar-alt" ></i> HCM : Copac Square, 12 Ton Dan, P 13, Q4, Ho Chi Minh
+        Hanoi & Danang: to be updated</li>
+                            </ul>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+        
+             <!-- About Contest -->
+          <section class="page-section" id="about">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                  <h3>Chọn 1 trong 3 nội dung bên dưới</h3>  
+                  <div class="courses">
+                      <div class="course">
+                          <p class="tile">Software Engineer Track</p>
+                          <p>React Native (4 weeks)</p>
+                           <p>React Native Advanced (4 weeks)</p>
+                            <p>UX Kickstart (2 weeks)</p>
+                      </div>
+        
+                       <div class="course">
+                          <p class="tile">Product Track</p>
+                          <p>Product Management (4 weeks)</p>
+                           <p>UX (4 weeks)</p>
+                            <p>Coding Kickstart (2 weeks)</p>
+                      </div>
+        
+                       <div class="course">
+                          <p class="tile">Data Track</p>
+                          <p>Data Science (4 weeks)</p>
+                           <p>Machine Learning (4 weeks)</p>
+                            <p>Product Management
+        Kickstart (2 weeks)</p>
                       </div>
                   </div>
                   </div>
@@ -220,7 +258,40 @@
             </div>
           </section>
     </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <footer class="main_footer">
+        <div class="container">
+           <div class="row align-items-center">
+              <div class="col-xl-8 main_footer__left">
+                 <div class="main_footer__logo">
+                     <img src="/assets/img/fb.png" alt="Logo circle">
+                     <img src="/assets/img/coderschool.png" alt="Logo circle">
+                 </div>
+                 <div class="copyright main_footer__copyright">
+                    <p class="mb-0"><span>Thời gian tuyển chọn hồ sơ: <strong>01/6/2019 - 30/6/2019</strong></p>
+                     <p class="mb-0"><span>Thời gian nhận hồ sơ đăng ký: <strong>01/5/2019 - 30/5/2019</strong></p>
+                      <p class="mb-0"><span>Thời gian học chính thức: <strong>01/7/2019 - 30/9/2019</strong></p>
+                 </div>
+              </div>
+              <div class="col-xl-4">
+                  <div class="newsleter">
+                     <h4>INNOVATION CHALLENGE</h4>
+                     <p>Program from Developer Circles & CoderShool</p>
+                  </div>
+              </div>
+           </div>
+     
+            <div class="row align-items-center">
+                 <ul class="main_footer__menu">
+                    <li class="nav-item">© 2019 CoderSchool</li>
+                    <li class="nav-item"><a class="nav-link" href="/vn#teachers"><span class="translation_missing" title="translation missing: vn.layouts.footer.teachers">TERMS OF USE </span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/vn/campus"><span class="translation_missing" title="translation missing: vn.layouts.footer.campus">SECURITY</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/vn#contacts"><span class="translation_missing" title="translation missing: vn.layouts.footer.contact_us">PRIVACY</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/vn#contacts"><span class="translation_missing" title="translation missing: vn.layouts.footer.contact_us">hello@coderschool.com</span></a></li>
+                   
+                 </ul>
+            </div>
+        </div>
+     </footer>    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>

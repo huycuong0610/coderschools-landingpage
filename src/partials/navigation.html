@@ -1,11 +1,15 @@
  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light  py-3" id="mainNav">
     <div class="container">
     <div class="logo">
       <a class="navbar-brand" href="/vn">
         <picture>
-            <source media="(min-width: 768px)" srcset="/assets/logo-full-cec610894e34df432eaf3899aa7c0d5ce27df6dac6a40c1eba1990e79718450a.svg">
-            <source media="(max-width: 767px)" srcset="/assets/Logo_responsive-09a480a599ff45fc79989ade00cb3ce754f3318f50094f86e9cf478f6ed375d7.png">
+            <source srcset="/assets/img/fb.png">
+            <source srcset="/assets/img/coderschool.png">
+            <img alt="logo-full" width="180px" src="/assets/">
+        </picture>
+        <picture>
+            <source srcset="/assets/img/coderschool.png">
             <img alt="logo-full" width="180px" src="/assets/">
         </picture>
       </a>
@@ -14,7 +18,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+        <ul class="navbar-nav my-2 my-lg-0">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About Program</a>
           </li>
@@ -22,20 +26,12 @@
             <a class="nav-link js-scroll-trigger" href="#services">Course Track</a>
           </li>
         </ul>
-
-        <div class="apply-now">
-            Apply Now
-        </div>
-
-        <div class="lang">
-            <div class="en">
-                Eng
-            </div>/
-            <div class="vn">
-                Vie
+            <a target="_self" class="ml-auto apply-now">
+                Apply Now
+            </a>
+            <div class="lang">
+                <a data-turbolinks="false" class="nav-link nav-language" href="/en">Eng / </a><a data-turbolinks="false" class="nav-link nav-language active" href="/vn">Vie</a>
             </div>
-        </div>
-
       </div>
     </div>
   </nav>
