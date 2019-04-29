@@ -47,47 +47,155 @@
 	            <div class="row">
 					<div class="col-sm-12">
 						<div class="form-group">
-							<label>Address</label>
-							<textarea placeholder="Enter Address Here.." rows="3" class="form-control"></textarea>
+							<label>Best ways to contact you</label>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <input class="magic-radio" type="radio" checked name="radio" id="contact_phone" value="phone">
+                                    <label for="contact_phone">
+                                        Phone (SMS)
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <input class="magic-radio" type="radio" name="radio" id="contact_email" value="email">
+                                    <label for="contact_email">
+                                       Email
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <input class="magic-radio" type="radio" name="radio" id="contact_zalo" value="zalo">
+                                    <label for="contact_zalo">
+                                        Zalo
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <input class="magic-radio" type="radio" name="radio" id="contact_facebook" value="facebook">
+                                    <label for="contact_facebook">
+                                        Facebook
+                                    </label>
+                                </div>
+                            </div>
 						</div>	
+					</div>
+	            </div>
+                </div>
+                <div class="col-lg-12 wells">
+	            <div class="row">
+					<div class="col-sm-12">
 						<div class="row">
-							<div class="col-sm-4 form-group">
-								<label>City</label>
-								<input type="text" placeholder="Enter City Name Here.." class="form-control">
-							</div>	
-							<div class="col-sm-4 form-group">
-								<label>State</label>
-								<input type="text" placeholder="Enter State Name Here.." class="form-control">
-							</div>	
-							<div class="col-sm-4 form-group">
-								<label>Zip</label>
-								<input type="text" placeholder="Enter Zip Code Here.." class="form-control">
+							<div class="col-sm-12 form-group">
+								<label>Which track would you like to study at CoderSchool?</label>
+								 <select class="form-control" id="track" name="track">
+                                    <option value="SOFTWARE ENGINEER TRACK (React Native)">SOFTWARE ENGINEER TRACK (React Native)</option>
+                                   <option value="Product Management (4 weeks)">Product Management (4 weeks</option>
+                                   <option value="Data Science (4 weeks)">Data Science (4 weeks)</option>
+                                </select>
 							</div>		
 						</div>
-						<div class="row">
-							<div class="col-sm-6 form-group">
-								<label>Title</label>
-								<input type="text" placeholder="Enter Designation Here.." class="form-control">
+                        <div class="row">
+							<div class="col-sm-12 form-group">
+								<label>If your given track is full, is there another subject you would also like to 
+study at CoderSchool?</label>
+								 <select class="form-control" id="another_track" name="another_track">
+                                    <option value="SOFTWARE ENGINEER TRACK (React Native)">SOFTWARE ENGINEER TRACK (React Native)</option>
+                                   <option value="Product Management (4 weeks)">Product Management (4 weeks</option>
+                                   <option value="Data Science (4 weeks)">Data Science (4 weeks)</option>
+                                </select>
 							</div>		
-							<div class="col-sm-6 form-group">
-								<label>Company</label>
-								<input type="text" placeholder="Enter Company Name Here.." class="form-control">
+						</div>
+                        <h3 class="motivation">Application and Motivation</h3>
+                        <div class="row">
+							<div class="col-sm-12 form-group">
+								<label>Which problem statements are you interested in?</label>
+								 <select class="form-control" id="interested" name="interested">
+                                    <option value="SOFTWARE ENGINEER TRACK (React Native)">SOFTWARE ENGINEER TRACK (React Native)</option>
+                                   <option value="Product Management (4 weeks)">Product Management (4 weeks</option>
+                                   <option value="Data Science (4 weeks)">Data Science (4 weeks)</option>
+                                </select>
+							</div>		
+						</div>
+                         <div class="row">
+							<div class="col-sm-12 form-group">
+								<label>Explain why you picked the problem statement above. </label>
+								<textarea class="form-control" id="explain" name="explain" rows="4"></textarea>
+                                <span class="noted pull-right">100/200</span>
+                            </div>		
+						</div>
+                         <div class="row pB50">
+								<label class="col-md-4">Which Batch do you choose?</label>
+                            <div class="col-md-4 float-right">
+								 <select class="form-control" id="batch" name="batch">
+                                   <option value="BATCH 1">BATCH 1 TRAINING 22-07 / 22-10 2019</option>
+                                   <option value="BATCH 2">BATCH 2 TRAINING 22-10 / 22-01 2019</option>
+                                </select>
 							</div>	
-						</div>						
-					<div class="form-group">
-						<label>Phone Number</label>
-						<input type="text" placeholder="Enter Phone Number Here.." class="form-control">
-					</div>		
-					<div class="form-group">
-						<label>Email Address</label>
-						<input type="text" placeholder="Enter Email Address Here.." class="form-control">
-					</div>	
-					<div class="form-group">
-						<label>Website</label>
-						<input type="text" placeholder="Enter Website Name Here.." class="form-control">
+						</div>	
+                         <div class="row pB50">
+							<div class="col-sm-12 form-group">
+								<label>Please tell us in one or two sentences about the most impressive thing 
+that you've built or achieved. </label>
+								<textarea class="form-control" id="impresive" name="impresive" rows="4"></textarea>
+                                <span class="noted pull-right">100/200</span>
+                            </div>		
+						</div>
+                         <div class="row pB50">
+							<div class="col-sm-12 form-group">
+								<label>What courses or projects have you completed related to 
+the track that you've chosen?  </label>
+								<textarea class="form-control" id="completed" name="completed" rows="4"></textarea>
+                                <span class="noted pull-right">100/200</span>
+                            </div>		
+						</div>
+						<div class="row pB20">
+								<label class="col-md-9 text-left">Are you available to come twice a week 
+to the CoderSchool offices in District 4, Ho Chi Minh City, 
+from the beginning to the end of the program?</label>
+                            <div class="col-md-3 float-right">
+								 <select class="form-control" id="available" name="available">
+                                   <option value="yes">yes</option>
+                                   <option value="no">no</option>
+                                </select>
+							</div>	
+						</div>	
+
+                        <div class="row pB50">
+								<label class="col-md-9 text-left">Are you a Developer Circles member?</label>
+                            <div class="col-md-3 float-right">
+								 <select class="form-control" id="developer_circles" name="developer_circles">
+                                   <option value="yes">yes</option>
+                                   <option value="no">no</option>
+                                </select>
+							</div>	
+						</div>	
+
+                         <div class="row pB50">
+								<label class="col-md-8 text-left">Which city are you a Developer Circles member of?</label>
+                            <div class="col-md-4 float-right">
+								 <select class="form-control" id="city_developer_circles" name="city_developer_circles">
+                                   <option value="hcm">Ho Chi Minh</option>
+                                   <option value="hn">Hà Nội</option>
+                                   <option value="dn">Đà Nẵng</option>
+                                </select>
+							</div>	
+						</div>	
+
+                         <div class="row pB50">
+								<label class="col-md-8 text-left">How did you hear about this program?</label>
+                            <div class="col-md-4 float-right">
+								 <select class="form-control" id="how_did_you_hear" name="how_did_you_hear">
+                                   <option value="facebook">facebook</option>
+                                </select>
+							</div>	
+						</div>		
+									
 					</div>
-					<button type="button" class="btn btn-lg btn-info">Submit</button>					
-					</div>
+                    
 				</div>
+               
+    </div>
+    <div class="row">
+        <div class="buttons">
+            <button id="submit" type="button" class="btn btn-lg btn-info">Submit your application</button>	
+            <button type="button" class="btn btn-lg btn-info test">Start Test</button>	
+        </div>
     </div>
 </section>
