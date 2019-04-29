@@ -26,6 +26,16 @@ header.masthead {
   }
 }
 
+#achieve{
+    h3{
+      color: #808080;
+      font-size: 16px;
+    }
+    h2{
+      color: #3B5996;
+    font-size: 1.8rem;
+    }
+}
 .timeline {
   list-style-type: none;
   display: flex;
@@ -87,6 +97,7 @@ header.masthead {
     background: white;
     color: #58595B;
     cursor: pointer;
+    max-height: 300px;
     &:hover{
       color: #3B5996;
       -webkit-box-shadow: 0px 1px 29px 4px rgba(59,89,150,0.97); 
@@ -107,7 +118,12 @@ header.masthead {
           &:nth-child(2), &:nth-child(3) {
             border-bottom: 1px solid gray;
           }
+          
         }
+        .line{
+            position: relative;
+            top: -10px;
+          }
   }
 }
 #software{
@@ -160,7 +176,7 @@ header.masthead {
 }
 .timelines{
   h3{
-    color: #E63439;
+    color: #E63439 !important;
     font-size: 1rem;
     font-weight: bold;
   }
@@ -284,6 +300,7 @@ html{
   overflow-x: hidden;
 }
 #tract {
+  padding-top: 0px;
   h3{
     margin: auto;
     margin-bottom: 15px;
