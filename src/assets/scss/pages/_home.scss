@@ -2,7 +2,6 @@
 
 // Styling for the masthead
 header.masthead {
-  padding-top: 10rem;
   // replace the masthead.jpg image in the /img directory to change the image
   // if the image name change, make sure to update the url path below!
   background-position: center;
@@ -13,9 +12,6 @@ header.masthead {
     font-size: 2.25rem;
   }
   @include media-breakpoint-up(lg) {
-    height: 100vh;
-    min-height: 40rem;
-    padding-bottom: 0;
     p {
       font-size: 1.15rem;
     }
@@ -60,12 +56,23 @@ header.masthead {
       margin-bottom: 30px;
     }
 }
-.page-section.gray{
+.cover{
+      width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -76vw;
+}
+.page-section{
+  h2{
+    margin-bottom: 30px;
+  }
+  &.gray{
    background-color: #EFF5FF;
     width: 100vw;
     position: relative;
     left: 50%;
     margin-left: -50vw;
+}
 }
 .status {
   display: flex;
@@ -139,4 +146,84 @@ header.masthead {
       }
     }
   }
+}
+
+  @media (min-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    width: 100%;
+    *width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+    max-width: 14.285714285714285714285714285714% !important;
+flex:none !important;
+  }
+}
+ 
+@media (min-width: 1200px) {
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1 {
+    width: 14.285714285714285714285714285714%;
+    *width: 14.285714285714285714285714285714%;
+    max-width: 14.285714285714285714285714285714% !important;
+flex:none !important;
+  }
+}
+.my-hr-line {
+    position: relative;
+    left: -15px;
+    width: calc(100% + 30px);
+    /* height: 1px; */
+    border: 0.5px solid #E4E5E6;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    &.white{
+       border: 0.5px solid white;
+    }
+}
+.universe{
+  .col{
+    padding: 10px;
+  }
+  .row{
+  }
+  img{
+    max-width: 100px;
+  }
+}
+.main_footer{
+.main_footer__logo{
+  img{
+    max-width: 70px;
+    margin: 10px 20px 20px 0px;
+  }
+  
+}
+a{
+    color: white;
+  }
+ font-size: 12px;
+.mb-0{
+    font-size: 12px;
+  }
+}
+#about{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+ul{
+  padding-left: 20px;
+}
+html{
+  overflow-x: hidden;
 }
