@@ -220,14 +220,7 @@ header.masthead {
   }
 }
 
-  @media (min-width: 768px){
-  .seven-cols .col-md-1,
-  .seven-cols .col-sm-1,
-  .seven-cols .col-lg-1  {
-    width: 100%;
-    *width: 100%;
-  }
-}
+  
 @media (min-width: 992px) {
   .seven-cols .col-md-1,
   .seven-cols .col-sm-1,
@@ -321,5 +314,45 @@ html{
      
       
     }
+  }
+}
+
+@media (max-width: 768px){
+  .seven-cols .col-md-1,
+  .seven-cols .col-sm-1,
+  .seven-cols .col-lg-1  {
+    width: 50%;
+    *width: 50%;
+  }
+  #tract h4 {
+        left: 0 !important;
+    position: static;
+}
+.courses .course {
+     background: #fff;
+    color: #58595b;
+    cursor: pointer;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 10px 10px 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+#achieve h2 {
+    font-size: 1.2rem;
+}
+.page-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+  .logo h4{
+    font-size: .8rem;
+    padding-top: 30px;
+  }
+  .coderschools{
+    max-width: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
   }
 }

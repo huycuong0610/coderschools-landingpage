@@ -5,6 +5,7 @@ $( document ).ready(function() {
     // when the form is submitted
     $('#contact-form').on('submit', function (e) {
         e.preventDefault();
+        $(".postdata").prop('disable', true);
         // if the validator does not prevent form submit
             var url = "http://localhost:8888/coder/coderschools-landingpage/data/data.php";
 

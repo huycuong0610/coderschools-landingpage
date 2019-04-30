@@ -4,7 +4,6 @@
 // Base styling for the navbar
 #mainNav {
   box-shadow: $box-shadow;
-  background-color: $blue-dark;
   transition: background-color 0.2s ease;
   .logo{
     display: flex;           /* establish flex container */
