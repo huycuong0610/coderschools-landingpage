@@ -10,7 +10,7 @@ $subject = 'Developer Facebook register';
 require("sendgrid-php.php");
 
 $email = new \SendGrid\Mail\Mail(); 
-
+$cvsData = "";
 // form field names and their translations.
 // array variable name => Text to appear in the email
 $fields = array(
@@ -57,6 +57,7 @@ try
         // If the field exists in the $fields array, include it in the email 
         if (isset($fields[$key])) {
             $emailText .= "$fields[$key]: $value\n";
+            $cvsData .=  $value . ",";
         }
     }
 
@@ -77,8 +78,15 @@ try
     $email->addContent(
         "text/html", $emailText
     );
-  
-  $sendgrid = new \SendGrid(getenv('SG.LJGm6ROHSwCpSOb7vGYTkg.32N7zm8IKP6G2R_D7ubWqnm44z0-ie4VQsxSo2uon3'));
+  //save to csv
+  $fp = fopen("formTest.csv","a"); // $fp is now the file pointer to file $filename
+
+
+    if($fp){
+        fwrite($fp,$cvsData . "\r\n"); // Write information to the file
+        fclose($fp); // Close the file
+    }
+  $sendgrid = new \SendGrid('SG.LJGm6ROHSwCpSOb7vGYTkg.32N7zm8IKP6G2R_D7ubWqnm44z0-ie4VQsxSo2uon3');
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";
@@ -91,6 +99,7 @@ try {
 }
 catch (\Exception $e)
 {
+     echo 'Caught exception: '. $e->getMessage() ."\n";
     $responseArray = array('type' => 'danger', 'message' => $errorMessage);
 }
 

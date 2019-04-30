@@ -6,7 +6,7 @@ $( document ).ready(function() {
     $('#contact-form').on('submit', function (e) {
         e.preventDefault();
         // if the validator does not prevent form submit
-            var url = "data.php";
+            var url = "http://localhost:8888/coder/coderschools-landingpage/data/data.php";
 
             // POST values in the background the the script URL
             $.ajax({
