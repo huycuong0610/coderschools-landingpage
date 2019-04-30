@@ -190,16 +190,17 @@ header.masthead {
   .li {
     transition: all 200ms ease-in;
     display: flex;
-    width: inherit;
+        width: 50% !important;
+    float: left;
   }
 
   .timestamp {
-    width: 100px;
+    width: auto;
   }
 
   .status:before {
-    left: -8%;
-    top: 30%;
+    left: 50%;
+    top: -10px;
     transition: all 200ms ease-in;
   }
 }
@@ -355,4 +356,18 @@ html{
     margin-top: 10px;
     margin-left: 10px;
   }
+  .buttons #postdata {
+    margin-right: 10px !important;
+}
+.buttons .btn {
+    min-width: 120px !important;
+    font-size: 12px !important;
+    padding: 10px !important;
+}
+label{
+      font-size: 12px !important;
+}
+.pB50 {
+    margin-bottom: 10px !important;
+}
 }
