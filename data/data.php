@@ -51,12 +51,12 @@ try
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "You have a new message from your contact form\n=============================\n";
+    $emailText = "You have a new message from Facebook developer register <br/>============================= <br/>";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 
         if (isset($fields[$key])) {
-            $emailText .= "$fields[$key]: $value\n";
+            $emailText .= "<strong>$fields[$key]</strong>: $value\n" . "<br/>";
             $cvsData .=  $value . ",";
         }
     }
@@ -70,8 +70,8 @@ try
     
     // Send email
   //  mail($sendTo, $subject, $emailText, implode("\n", $headers));
-
-    $email->setFrom($_POST["email"], "Example User");
+    $names  = $_POST["firstName"] . " " . $_POST["lastName"];
+    $email->setFrom($_POST["email"], $names);
     $email->setSubject("fill in your information developer facebook");
     $email->addTo("huycuong0610@gmail.com", "Example User");
     $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
@@ -86,7 +86,7 @@ try
         fwrite($fp,$cvsData . "\r\n"); // Write information to the file
         fclose($fp); // Close the file
     }
-  $sendgrid = new \SendGrid('SG.LJGm6ROHSwCpSOb7vGYTkg.32N7zm8IKP6G2R_D7ubWqnm44z0-ie4VQsxSo2uon3');
+  $sendgrid = new \SendGrid('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');
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";

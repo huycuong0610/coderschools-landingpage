@@ -48,37 +48,40 @@
         						<div class="row">
         							<div class="col-sm-6 form-group">
         								<label>First Name (Given Name)</label>
-        								<input res name="firstName" type="text" placeholder="Natalie" class="form-control">
+        								<input required name="firstName" type="text" placeholder="Natalie" class="form-control">
         							</div>
         							<div class="col-sm-6 form-group">
         								<label>Last Name (Family Name)</label>
-        								<input res name="lastName" type="text" placeholder="Pham" class="form-control">
+        								<input required name="lastName" type="text" placeholder="Pham" class="form-control">
         							</div>
         						</div>		
         
                                 <div class="row">
         							<div class="col-sm-5 form-group">
         								<label>Email</label>
-        								<input res name="email" type="text" placeholder="Natalie@coderschool.vn" class="form-control">
+        								<input required name="email" type="text" placeholder="Natalie@coderschool.vn" class="form-control">
         							</div>
         							<div class="col-sm-3 form-group">
         								<label>Gender</label>
-        								<input res type="text" placeholder="Pham" class="form-control">
+        								 <select  class="form-control" id="gender" name="gender">
+                                           <option value="Male">Male</option>
+                                           <option value="Female">Female</option>
+                                        </select>
         							</div>
                                     <div class="col-sm-4 form-group">
         								<label>Phone number</label>
-        								<input res type="text" name="phone" placeholder="0966666888" class="form-control">
+        								<input required type="text" name="phone" placeholder="0966666888" class="form-control">
         							</div>
         						</div>
         
                                 <div class="row">
         							<div class="col-sm-6 form-group">
         								<label>Facebook Profile Link </label>
-        								<input res name="facebook" type="text" placeholder="https://www.facebook.com/" class="form-control">
+        								<input required name="facebook" type="text" placeholder="https://www.facebook.com/" class="form-control">
         							</div>
         							<div class="col-sm-6 form-group">
         								<label>Your Github Link</label>
-        								<input res name="github" type="text" placeholder="https://github.com/dbpedia/links" class="form-control">
+        								<input required name="github" type="text" placeholder="https://github.com/dbpedia/links" class="form-control">
         							</div>
         						</div>	
         					</div>
