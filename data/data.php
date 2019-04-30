@@ -4,7 +4,22 @@ $sendTo = 'devcssupport@coderschool.com';
 
 // subject of the email
 $subject = 'Developer Facebook register';
+// Comment out the above line if not using Composer
+require("sendgrid-php.php");
 
+$email = new \SendGrid\Mail\Mail(); 
+
+
+
+
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: '. $e->getMessage() ."\n";
+}
 // form field names and their translations.
 // array variable name => Text to appear in the email
 $fields = array(
@@ -64,6 +79,15 @@ try
     
     // Send email
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
+
+    $email->setFrom($_POST["email"], "Example User");
+    $email->setSubject("fill in your information developer facebook");
+    $email->addTo("huycuong0610@gmail.com", "Example User");
+    $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
+    $email->addContent(
+        "text/html", $emailText
+    );
+    $sendgrid = new \SendGrid(getenv('SG.LJGm6ROHSwCpSOb7vGYTkg.32N7zm8IKP6G2R_D7ubWqnm44z0-ie4VQsxSo2uon3'));
 
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }
