@@ -116,10 +116,10 @@ gulp.task('clean:dist', function () {
 
 // ------------ Build Sequence -------------
 // Simply run 'gulp' in terminal to run local server and watch for changes
-gulp.task('default', ['clean:dist', 'font', 'scripts', 'images', 'compile-html', 'resetPages', 'media', 'watch']);
+gulp.task('default', ['clean:dist', 'font', 'scripts',  'compile-html', 'resetPages', 'media', 'watch']);
 
 // Creates production ready assets in dist folder
 gulp.task('build', function () {
     console.log('Building production ready assets');
-    runSequence('clean:dist', 'sass', ['scripts', 'images', 'font', 'compile-html'])
+    runSequence('clean:dist', 'sass', ['scripts', 'font', 'compile-html'])
 });

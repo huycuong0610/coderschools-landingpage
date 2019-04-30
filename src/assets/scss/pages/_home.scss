@@ -185,6 +185,9 @@ header.masthead {
   .timeline {
     list-style-type: none;
     display: block;
+    padding-left: 0px;
+    margin-left: -20px;
+    margin-top: 30px;
   }
 
   .li {
@@ -199,7 +202,7 @@ header.masthead {
   }
 
   .status:before {
-    left: 50%;
+    left: 44%;
     top: -10px;
     transition: all 200ms ease-in;
   }
@@ -345,7 +348,7 @@ html{
 .page-section h2 {
     margin-bottom: 15px;
     font-size: 1.2rem;
-    margin-top: 30px;
+    padding-top: 30px;
   }
   .logo h4{
     font-size: .8rem;
@@ -369,5 +372,8 @@ label{
 }
 .pB50 {
     margin-bottom: 10px !important;
+}
+#innovations{
+  margin-bottom: -50px;
 }
 }
