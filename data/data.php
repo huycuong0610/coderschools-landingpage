@@ -1,7 +1,9 @@
 <?php
 $from = $_POST["email"];
 $sendTo = 'devcssupport@coderschool.com';
-
+// if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
 // subject of the email
 $subject = 'Developer Facebook register';
 // Comment out the above line if not using Composer
@@ -9,17 +11,6 @@ require("sendgrid-php.php");
 
 $email = new \SendGrid\Mail\Mail(); 
 
-
-
-
-try {
-    $response = $sendgrid->send($email);
-    print $response->statusCode() . "\n";
-    print_r($response->headers());
-    print $response->body() . "\n";
-} catch (Exception $e) {
-    echo 'Caught exception: '. $e->getMessage() ."\n";
-}
 // form field names and their translations.
 // array variable name => Text to appear in the email
 $fields = array(
@@ -53,8 +44,7 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
  *  LET'S DO THE SENDING
  */
 
-// if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
-error_reporting(E_ALL & ~E_NOTICE);
+
 
 try
 {
@@ -78,7 +68,7 @@ try
     );
     
     // Send email
-    mail($sendTo, $subject, $emailText, implode("\n", $headers));
+  //  mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
     $email->setFrom($_POST["email"], "Example User");
     $email->setSubject("fill in your information developer facebook");
@@ -87,8 +77,16 @@ try
     $email->addContent(
         "text/html", $emailText
     );
-    $sendgrid = new \SendGrid(getenv('SG.LJGm6ROHSwCpSOb7vGYTkg.32N7zm8IKP6G2R_D7ubWqnm44z0-ie4VQsxSo2uon3'));
-
+  
+  $sendgrid = new \SendGrid(getenv('SG.LJGm6ROHSwCpSOb7vGYTkg.32N7zm8IKP6G2R_D7ubWqnm44z0-ie4VQsxSo2uon3'));
+try {
+    $response = $sendgrid->send($email);
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: '. $e->getMessage() ."\n";
+}
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }
 catch (\Exception $e)
