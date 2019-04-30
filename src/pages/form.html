@@ -1,43 +1,43 @@
 <section id="form">
     <h2>Please fill in your information</h2>
-
+    <form id="contact-form" class=”form-horizontal” role=”form”>
     <div class="col-lg-12 wells">
 	<div class="row">
 					<div class="col-sm-12">
 						<div class="row">
 							<div class="col-sm-6 form-group">
 								<label>First Name (Given Name)</label>
-								<input name="firstName" type="text" placeholder="Natalie" class="form-control">
+								<input required name="firstName" type="text" placeholder="Natalie" class="form-control">
 							</div>
 							<div class="col-sm-6 form-group">
 								<label>Last Name (Family Name)</label>
-								<input name="lastName" type="text" placeholder="Pham" class="form-control">
+								<input required name="lastName" type="text" placeholder="Pham" class="form-control">
 							</div>
 						</div>		
 
                         <div class="row">
 							<div class="col-sm-5 form-group">
 								<label>Email</label>
-								<input name="email" type="text" placeholder="Natalie@coderschool.vn" class="form-control">
+								<input required name="email" type="text" placeholder="Natalie@coderschool.vn" class="form-control">
 							</div>
 							<div class="col-sm-3 form-group">
 								<label>Gender</label>
-								<input type="text" placeholder="Pham" class="form-control">
+								<input required type="text" placeholder="Pham" class="form-control">
 							</div>
                             <div class="col-sm-4 form-group">
 								<label>Phone number</label>
-								<input type="text" name="phone" placeholder="0966666888" class="form-control">
+								<input required type="text" name="phone" placeholder="0966666888" class="form-control">
 							</div>
 						</div>
 
                         <div class="row">
 							<div class="col-sm-6 form-group">
 								<label>Facebook Profile Link </label>
-								<input name="facebook" type="text" placeholder="https://www.facebook.com/" class="form-control">
+								<input required name="facebook" type="text" placeholder="https://www.facebook.com/" class="form-control">
 							</div>
 							<div class="col-sm-6 form-group">
 								<label>Your Github Link</label>
-								<input name="github" type="text" placeholder="https://github.com/dbpedia/links" class="form-control">
+								<input required name="github" type="text" placeholder="https://github.com/dbpedia/links" class="form-control">
 							</div>
 						</div>	
 					</div>
@@ -84,7 +84,7 @@
 						<div class="row">
 							<div class="col-sm-12 form-group">
 								<label>Which track would you like to study at CoderSchool?</label>
-								 <select class="form-control" id="track" name="track">
+								 <select  class="form-control" id="track" name="track">
                                     <option value="SOFTWARE ENGINEER TRACK (React Native)">SOFTWARE ENGINEER TRACK (React Native)</option>
                                    <option value="Product Management (4 weeks)">Product Management (4 weeks</option>
                                    <option value="Data Science (4 weeks)">Data Science (4 weeks)</option>
@@ -194,8 +194,9 @@ from the beginning to the end of the program?</label>
     </div>
     <div class="row">
         <div class="buttons">
-            <button id="submit" type="button" class="btn btn-lg btn-info">Submit your application</button>	
+            <button id="postdata" type="submit" class="btn btn-lg btn-info">Submit your application</button>	
             <button type="button" class="btn btn-lg btn-info test">Start Test</button>	
         </div>
     </div>
+    </form>
 </section>
