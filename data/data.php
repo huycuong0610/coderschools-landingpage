@@ -86,7 +86,7 @@ try
         fwrite($fp,$cvsData . "\r\n"); // Write information to the file
         fclose($fp); // Close the file
     }
-  $sendgrid = new \SendGrid('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');
+  $sendgrid = new \SendGrid('');
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";
