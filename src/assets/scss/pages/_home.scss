@@ -1,18 +1,32 @@
 /* sample file */
-
+.navbar-brand{
+  img{
+    max-width: 600px;
+  }
+}
 // Styling for the masthead
 header.masthead {
   // replace the masthead.jpg image in the /img directory to change the image
   // if the image name change, make sure to update the url path below!
-  height: 100vh;
-  background-image: url(../img/masthead.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-   width: 100vw;
+    min-height: 500px;
+    background-image: url(../img/masthead.jpg);
+    /* background-size: cover; */
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 100vw;
     position: relative;
     left: 50%;
     margin-left: -50vw;
+    color: #fff;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 28% 50%;
+    .content{
+      text-align: left;
+      span{
+        color: #00F6FF;
+      }
+    }
   h1 {
     font-size: 2.25rem;
   }
@@ -29,9 +43,19 @@ header.masthead {
       font-size: 3.5rem;
     }
   }
+  .course-free{
+    background: rgba(255, 255, 255, 0.44);
+    border-radius: 10px;
+    padding: 5px 13px;
+    width: 100%;
+    max-width: 325px;
+    font-size: 14px;
+    margin: 20px 0px 80px;
+  }
 }
 .maps{
   max-width: 300px;
+  padding-top: 5%;
 }
 #achieve{
     h3{

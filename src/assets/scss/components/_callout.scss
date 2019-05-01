@@ -10,7 +10,7 @@
     flex-direction: column;  /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
     align-items: center;     /* center items horizontally, in this case */
-    padding-left: 15%;
+    margin: auto;
   }
   .navbar-brand {
     font-family: $font-family-sans-serif;
@@ -41,6 +41,11 @@
     position: absolute;
     right: 5%;
 } 
+.newsleter{
+  a{
+    color: #48CAE8 !important;
+  }
+}
   @include media-breakpoint-up(lg) {
     // Base styling for the navbar - screen sizes greater than the large breakpoint
     box-shadow: none;
@@ -167,12 +172,13 @@ hr.light {
 }
 
 .apply-now{
-  background-color: #E63439;
-  border: 1px solid white;
-  color: white !important;
-  padding: 5px 20px;
-  color: white;
-  margin-right: 70px;
+      background-color: #e63439;
+    border: 1px solid #fff;
+    color: #fff!important;
+    padding: 15px 20px;
+    color: #fff;
+    margin-right: 70px;
+    font-size: 14px;
   &:hover{
     text-decoration: none;
   }
