@@ -4,10 +4,15 @@
 header.masthead {
   // replace the masthead.jpg image in the /img directory to change the image
   // if the image name change, make sure to update the url path below!
+  height: 100vh;
+  background-image: url(../img/masthead.png);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+   width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
   h1 {
     font-size: 2.25rem;
   }
@@ -25,7 +30,9 @@ header.masthead {
     }
   }
 }
-
+.maps{
+  max-width: 300px;
+}
 #achieve{
     h3{
       color: #808080;
