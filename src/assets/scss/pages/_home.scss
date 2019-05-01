@@ -407,6 +407,11 @@ html{
     margin-left: 30px;
     margin-bottom: 30px;
 }
+header.masthead .content {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
 #achieve h2 {
     font-size: 1.2rem;
 }
@@ -440,5 +445,35 @@ label{
 }
 #innovations{
   margin-bottom: -50px;
+}
+.status {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-top: 0px; 
+    position: relative;
+    transition: all .2s ease-in;
+    min-height: auto;
+    padding-top: 0px;
+    text-align: left;
+    font-size: 13px;
+    br{
+      display: none;
+    }
+}.timestamp {
+    width: 0px;
+    display: none;
+}
+.timeline .li {
+    transition: all .2s ease-in;
+    width: 100% !important;
+}
+.status:before{
+  display: none;
+}
+.timeline{
+  margin-left: 20px;
+  margin-top: 10px;
 }
 }
